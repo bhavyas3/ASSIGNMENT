@@ -1263,12 +1263,35 @@ body::after {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 12px;
     padding-top: 16px;
     border-top: 1px solid var(--qf-border);
 }
 .applicants-count {
     font-size: 12px;
     color: var(--qf-text-light);
+}
+.opportunity-actions {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+.delete-opportunity-btn {
+    background: var(--qf-red);
+}
+.delete-opportunity-btn:hover {
+    background: #a93636;
+}
+.opportunity-empty {
+    grid-column: 1 / -1;
+    padding: 28px;
+    border: 1px dashed var(--qf-border);
+    border-radius: 16px;
+    color: var(--qf-text-light);
+    background: var(--qf-white);
+    text-align: center;
+    font-size: 14px;
 }
 
 /* Modal Styles */
